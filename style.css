@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(110, 87, 87);
+}
+
+.converter-container{
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgb(13, 13, 13, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 24px 30px;
+    text-align: center;
+}
+
+.converter-container h1{
+    font-size: 24px;
+    text-decoration: underline;
+    color: rgb(48, 48, 48);
+    margin-bottom: 40px;
+}
+
+.converter-container .input-container {
+    border: 2px solid grey;
+    border-radius: 4px;
+    margin-block: 20px;
+}
+
+.converter-container .input-container:focus-within{
+    border-color: rgb(45, 45, 233);
+}
+
+.converter-container .input-container input,
+.converter-container .input-container select
+{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.converter-container .arrow{
+    transform: rotate(90deg);
+    font-size: 44px;
+}
+
+.converter-container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:440px){
+    .converter-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .converter-container h1{
+        font-size: 22px;
+    }
+
+    .converter-container .input-container{
+        border: none;
+    }
+    .converter-container .input-container input, 
+    .converter-container .input-container select{
+        border: 1px solid #ccc;
+        margin-block: 4px;
+        width: 100%;
+    }
+}
