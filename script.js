@@ -31,3 +31,5 @@ countries.forEach((country) => {
   //   option2.textContent = `${country.code} (${country.name})`;
   //   toCurrencyElement.appendChild(option2);
 });
+
+//funct to get exchnage reate using tag
